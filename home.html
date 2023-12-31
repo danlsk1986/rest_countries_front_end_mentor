@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/light_style.css" id="hoja_de_estilos">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->  
+</head>
+<body>
+  <header class="header">
+    <h1>Where in the world?</h1>
+    <div class="switcher" id='lightOrDark'>
+      <i class="fa-regular fa-moon fa-xl" id="moon"></i><p>Dark Mode</p>
+    </div>
+  </header>
+  <main class="container">
+
+    <div class="menu">
+      <div class="search_bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search for a country..." id="search">      
+      </div>
+      
+      <div class="filter_region_menu">
+        <div class="filter_region" id="dropdown"> 
+          <span class="text">Filter by Region</span>
+          <span><i class="fa-solid fa-chevron-down fa-sm"></i></span>  
+        </div>
+  
+        <div class="filter_options" id="options">
+          <ul class="options">
+            <li value="africa">Africa</li>
+            <li value="america">America</li>
+            <li value="asia">Asia</li>
+            <li value="europe">Europe</li>
+            <li value="oceania">Oceania</li>
+          </ul>
+        </div>
+
+      </div>      
+    </div>
+    
+
+    <section class="flags_grid">
+      
+      <div class="country">
+        <div class="country_flag">
+          <img src="" alt="">
+        </div>
+
+        <div class="country_info">
+          <h3 class="country_name"></h3>
+          <p>Population: <span class="population"></span></p>
+          <p>Region: <span class="region"></span></p>
+          <p>Capital: <span class="capital"></span></p>
+        </div>  
+      </div>
+      
+      <div class="country">
+        <div class="country_flag">
+          <img src="" alt="">
+        </div>
+
+        <div class="country_info">
+          <h3 class="country_name"></h3>
+          <p>Population: <span class="population"></span></p>
+          <p>Region: <span class="region"></span></p>
+          <p>Capital: <span class="capital"></span></p>
+        </div>
+      </div>
+      
+      <div class="country">
+        <div class="country_flag">
+          <img src="" alt="">
+        </div>
+
+        <div class="country_info">
+          <h3 class="country_name"></h3>
+          <p>Population: <span class="population"></span></p>
+          <p>Region: <span class="region"></span></p>
+          <p>Capital: <span class="capital"></span></p>
+        </div>
+      </div>
+      
+      <div class="country">
+        <div class="country_flag">
+          <img src="" alt="">
+        </div>
+
+        <div class="country_info">
+          <h3 class="country_name"></h3>
+          <p>Population: <span class="population"></span></p>
+          <p>Region: <span class="region"></span></p>
+          <p>Capital: <span class="capital"></span></p>
+        </div>
+      </div>
+      
+      <div class="country">
+        <div class="country_flag">
+          <img src="" alt="">
+        </div>
+
+        <div class="country_info">
+          <h3 class="country_name"></h3>
+          <p>Population: <span class="population"></span></p>
+          <p>Region: <span class="region"></span></p>
+          <p>Capital: <span class="capital"></span></p>
+        </div>
+      </div>
+      
+      <div class="country">
+        <div class="country_flag">
+          <img src="" alt="">
+        </div>
+
+        <div class="country_info">
+          <h3 class="country_name"></h3>
+          <p>Population: <span class="population"></span></p>
+          <p>Region: <span class="region"></span></p>
+          <p>Capital: <span class="capital"></span></p>
+        </div>
+      </div>
+      
+      <div class="country">
+        <div class="country_flag">
+          <img src="" alt="">
+        </div>
+
+        <div class="country_info">
+          <h3 class="country_name"></h3>
+          <p>Population: <span class="population"></span></p>
+          <p>Region: <span class="region"></span></p>
+          <p>Capital: <span class="capital"></span></p>
+        </div>
+      </div>
+      
+      <div class="country">
+        <div class="country_flag">
+          <img src="" alt="">
+        </div>
+
+        <div class="country_info">
+          <h3 class="country_name"></h3>
+          <p>Population: <span class="population"></span></p>
+          <p>Region: <span class="region"></span></p>
+          <p>Capital: <span class="capital"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <bottom>
+      <ul class="paginador">
+        <li class="pagina" data-pagina="1">1</li>
+        <li class="pagina" data-pagina="2">2</li>
+        <li class="pagina" data-pagina="3">3</li>
+        <li class="pagina" data-pagina="4">4</li>
+        <li class="pagina" data-pagina="5">5</li>
+        <li class="pagina" data-pagina="6">6</li>
+      </ul>
+    </bottom>
+
+  </main>
+
+  <main class="container_details" style="display: none;">     
+    <button class="btn">
+      <a href="home.html">
+        <i class="fa-solid fa-arrow-left"></i>Back
+      </a>      
+    </button>
+
+    <section>      
+      <div class="detail_country">
+        <div class="detail_country_flag">
+          <img src="" alt="">
+        </div>
+
+        <div class="detail_country_info">
+          <h1 class="detail_country_name">Undefined</h1>
+          <div class="detail_country_stats">
+            <div class="col">
+              <p>Native Name: <span class="detail_native_name"></span></p>
+              <p>Population: <span class="detail_population"></span></p>
+              <p>Region: <span class="detail_region"></span></p>
+              <p>Sub Region: <span class="detail_subregion"></span></p>
+              <p>Capital: <span class="detail_capital"></span></p>
+            </div>
+            <div class="col">
+              <p>Top Level Domain: <span class="top_level_domain"></span></p>
+              <p>Currencies: <span class="currencies"></span></p>
+              <p>Languages: <span class="languages"></span></p>            
+            </div>
+          </div>
+
+          <div class="detail_country_border">
+            <p>Border Countries: </p>
+            <div class="country_list">
+              
+            </div>
+          </div>        
+          
+        </div>  
+      </div>       
+    </section>
+    
+
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Daniel Alejandro Lasauskas</a>.
+  </div>
+  <script src="js/app2.js"></script>
+</body>
+</html>
